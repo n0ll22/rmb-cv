@@ -3,7 +3,7 @@
     "private": true,
     "version": "1.0.0",
     "type": "module",
-    "homepage": "https://vinnix169.github.io/",
+    "homepage": "https://vinnix169.github.io/RMB-CV",
     "scripts": {
         "dev": "vite",
         "build": "tsc -b && vite build",
