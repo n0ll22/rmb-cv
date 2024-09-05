@@ -30,6 +30,8 @@ jobs:
               with:
                   name: production-files
                   path: ./dist
+            - name: Copy Images
+              run: cp -R src/Images ./dist/Images
 
     deploy:
         name: Deploy
