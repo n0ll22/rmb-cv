@@ -1,15 +1,16 @@
 {
     "name": "client",
     "private": true,
-    "version": "0.0.0",
+    "version": "1.0.0",
     "type": "module",
-    "homepage": "https://vinnix169.github.io/CV",
+    "homepage": "https://vinnix169.github.io/",
     "scripts": {
         "dev": "vite",
         "build": "tsc -b && vite build",
         "lint": "eslint .",
         "preview": "vite preview",
-        "deploy": "gh-pages -d build"
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
     },
     "dependencies": {
         "@types/react-icons": "^2.2.7",
@@ -28,7 +29,6 @@
         "eslint": "^9.9.0",
         "eslint-plugin-react-hooks": "^5.1.0-rc.0",
         "eslint-plugin-react-refresh": "^0.4.9",
-        "gh-pages": "^6.1.1",
         "globals": "^15.9.0",
         "postcss": "^8.4.41",
         "tailwindcss": "^3.4.10",
