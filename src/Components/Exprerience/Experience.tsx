@@ -15,17 +15,17 @@ const Experience: React.FC = () => {
             </h3>
             <div className="flex flex-wrap items-center justify-center">
                 <Card
-                    img="src\Assets\dnd.jpg"
+                    img="assets\Images\dnd.jpg"
                     title={"Household DnD"}
                     id="HouseholdDnD"
                 />
                 <Card
-                    img="src\Assets\hamburger.jpeg"
+                    img="assets\Images\hamburger.jpeg"
                     title={"Calorie Calculator"}
                     id="Calorie-Calculator"
                 />
                 <Card
-                    img="src\Assets\wallofshame.png"
+                    img="assets\Images\wallofshame.png"
                     title={"Wall of Shame"}
                     id="HallOfShame
 "
