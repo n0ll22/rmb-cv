@@ -25,9 +25,6 @@ jobs:
             - name: Build project
               run: npm run build
 
-            - name: Copy images to dist folder
-              run: cp -R ./src/Assets ./dist/Images
-
             - name: Upload production-ready build files
               uses: actions/upload-artifact@v2
               with:
