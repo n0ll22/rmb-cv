@@ -7,7 +7,6 @@ type Props = {
 };
 
 const Card: React.FC<Props> = ({ img, title, id }) => {
-    console.log(title);
     return (
         <a
             href={"https://github.com/vinnix169/" + id}
