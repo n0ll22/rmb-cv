@@ -7,7 +7,7 @@ const About: React.FC = () => {
     return (
         <section
             id="about"
-            className="min-h-screen flex flex-col lg:flex-row items-center justify-around flex-wrap p-2"
+            className="min-h-screen flex flex-col lg:flex-row items-center justify-around flex-wrap p-2 pt-10"
         >
             <div className="flex flex-col items-center">
                 <div
