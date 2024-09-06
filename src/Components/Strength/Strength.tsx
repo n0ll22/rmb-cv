@@ -74,8 +74,10 @@ const Strength: React.FC = () => {
                 </div>
             </div>
             <p className="text-slate-400">{t("strength.footnote")}</p>
-            <div className="absolute translate-y-96">
-                <ScrollDown handleScrolling={handleScrolling} />
+            <div>
+                <div className="">
+                    <ScrollDown handleScrolling={handleScrolling} />
+                </div>
             </div>
         </section>
     );
