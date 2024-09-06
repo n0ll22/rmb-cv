@@ -1,5 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 const Education: React.FC = () => {
+    const { t } = useTranslation("global");
+
     return (
         <section
             id="education"
@@ -12,26 +15,22 @@ const Education: React.FC = () => {
             />
             <div className="flex flex-col items-center justify-center">
                 <h2 className="text-4xl text-slate-300 mb-2 tracking-widest">
-                    University of Pécs
+                    {t("education.university.name")}
                 </h2>
                 <h3 className="text-xl text-slate-400 mb-10 tracking-widest">
-                    Computer Science BSc
+                    {t("education.university.field")}
                 </h3>
                 <p className="w-3/4 text-center text-slate-400">
-                    Thanks to my University, I have gained some experience in
-                    many programming languages since 2022. I have always been a
-                    diligent student, and always passed in all IT subjects. I
-                    expect only one year until graduation, and I would stay at
-                    your company too!
+                    {t("education.university.body")}
                 </p>
                 <p className="mt-10 text-slate-600">
-                    Expected Graduation: 2025 summer
+                    {t("education.university.graduation")}
                 </p>
             </div>
             <div className="mt-20 text-slate-400">
-                <p className="mb-2 text-lg">I also have:</p>
-                <p>Level B2 Complex Language Certificate in English</p>
-                <p>Level B driving licence since 2021</p>
+                <p className="mb-2 text-lg">{t("education.misc.title")}</p>
+                <p>{t("education.misc.drivingLicense")}</p>
+                <p>{t("education.misc.languageCertification")}</p>
             </div>
         </section>
     );

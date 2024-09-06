@@ -1,7 +1,15 @@
 import React from "react";
 import ScrollDown from "../ScrollDown/ScrollDown";
+import { useTranslation } from "react-i18next";
 
 const Strength: React.FC = () => {
+    const { t } = useTranslation("global");
+    const personalityTraits = t("strength.personality.body", {
+        returnObjects: true,
+    }) as string[];
+
+    console.log(personalityTraits);
+
     function handleScrolling(id: string): void {
         const location = document.getElementById(id);
         if (location) {
@@ -14,11 +22,13 @@ const Strength: React.FC = () => {
             id="strength"
             className="min-h-screen flex flex-col items-center justify-center bg-slate-800/50 space-y-5 p-2"
         >
-            <h1 className="text-4xl text-slate-300 py-10">My Strengths</h1>
+            <h1 className="text-4xl text-slate-300 py-10">
+                {t("strength.title")}
+            </h1>
             <div className="flex justify-around w-full flex-wrap">
-                <div className="w-64">
+                <div className="w-64 p-4">
                     <h2 className="text-xl font-bold bg-slate-200 text-slate-800 rounded-lg py-4 px-2 mb-4">
-                        Main Strengths:
+                        {t("strength.main")}
                     </h2>
                     <ul className="list-disc text-slate-400">
                         <li className="ml-5">
@@ -36,9 +46,9 @@ const Strength: React.FC = () => {
                         <li className="ml-5">TailwindCSS</li>
                     </ul>
                 </div>
-                <div className="w-64">
+                <div className="w-64 p-4">
                     <h2 className="text-xl font-bold bg-slate-200 text-slate-800 rounded-lg py-4 px-2 mb-4">
-                        Also Know:
+                        {t("strength.secondary")}
                     </h2>
                     <ul className="list-disc text-slate-400">
                         <li className="ml-5">Java + SpringBoot</li>
@@ -48,21 +58,22 @@ const Strength: React.FC = () => {
                         <li className="ml-5">SCSS/SASS</li>
                     </ul>
                 </div>
-                <div className="w-64">
+                <div className="w-64 p-4">
                     <h2 className="text-xl font-bold bg-slate-200 text-slate-800 rounded-lg py-4 px-2 mb-4">
-                        Personality:
+                        {t("strength.personality.title")}
                     </h2>
                     <ul className="list-disc text-slate-400">
-                        <li className="ml-5">Hard-working</li>
-                        <li className="ml-5">Charismatic</li>
-                        <li className="ml-5">Collaborative</li>
-                        <li className="ml-5">Adaptable</li>
+                        {personalityTraits.map(
+                            (trait: string, index: number) => (
+                                <li className="ml-5" key={index}>
+                                    {trait}
+                                </li>
+                            )
+                        )}
                     </ul>
                 </div>
             </div>
-            <p className="text-slate-400">
-                I am always open to learn something new!
-            </p>
+            <p className="text-slate-400">{t("strength.footnote")}</p>
             <div className="absolute translate-y-96">
                 <ScrollDown handleScrolling={handleScrolling} />
             </div>

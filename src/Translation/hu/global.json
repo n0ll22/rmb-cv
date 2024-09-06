@@ -1,0 +1,54 @@
+{
+    "about": {
+        "name": "Reményi Mihály Bendegúz",
+        "introduction": {
+            "head": "Bemutatkozás:",
+            "body": "Én egy Junior Webfejlesztő vagyok, és harmadéves egyetemi hallgató, aki szívesen dolgozna az ön cégénél. Ambiciózus, célorientált és nyitott személy vagyok, aki hajlandó dolgozni és tanulni."
+        }
+    },
+    "education": {
+        "university": {
+            "name": "Pécsi Tudományegyetem",
+            "field": "Programtervező Informatikus BSc",
+            "body": "Az egyetememnek köszönhetően sok programozási nyelvben szereztem tapasztalatot 2022 óta. Mindig szorgalmas hallgató voltam, és minden informatikai tárgyból könnyen átmentem. Csak egy év van hátra a diplomáig, és onnantól szívesen maradnék a cégénél!",
+            "graduation": "Várható diploma: 2025 nyara"
+        },
+        "misc": {
+            "title": "Továbbiak:",
+            "drivingLicense": "B kategóriás jogosítvány 2021 óta",
+            "languageCertification": "B2 komplex nyelvvizsga angolból"
+        }
+    },
+    "experience": {
+        "head": "Tapasztalat",
+        "body": "Tekintse meg a saját projektjeimet!"
+    },
+    "footer": {
+        "title": "Keressen fel!",
+        "footnote": "Ha valamilyen okból nem keresne fel, kérem, jelezze, hogy miért, hiszen ez egy módja annak, hogy jobb programozóvá váljak!",
+        "createdBy": "Ez az oldal Vite React 18 TypeScript-et használ, és Én készítettem."
+    },
+    "strength": {
+        "title": "Erősségeim",
+        "main": "Fő erősségek:",
+        "secondary": "További ismeretek:",
+        "personality": {
+            "title": "Személyiség:",
+            "body": [
+                "Szorgalmas",
+                "Karizmatikus",
+                "Együttműködő",
+                "Alkalmazkodó"
+            ]
+        },
+        "footnote": "Mindig nyitott vagyok új dolgok tanulására!"
+    },
+    "navbar": {
+        "options": {
+            "aboutMe": "Rólam",
+            "education": "Tanulmányok",
+            "experience": "Tapasztalat",
+            "strength": "Erősségek"
+        }
+    }
+}

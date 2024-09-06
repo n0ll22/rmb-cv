@@ -1,0 +1,54 @@
+{
+    "about": {
+        "name": "Bendegúz Mihály Reményi",
+        "introduction": {
+            "head": "Introduction:",
+            "body": "I am a Junior Web Developer and a 3rd-year university student, who is looking forward to work at your company. Iam an ambitious, goal-oriented, receptive person, who iswilling to work and learn."
+        }
+    },
+    "education": {
+        "university": {
+            "name": "University of Pécs",
+            "field": "Computer Science BSc",
+            "body": "Thanks to my University, I have gained some experience in many programming languages since 2022. I have always been a diligent student, and always passed in all IT subjects. I expect only one year until graduation, and I would stay at your company too!",
+            "graduation": "Expected Graduation: 2025 summer"
+        },
+        "misc": {
+            "title": "I also have",
+            "drivingLicense": "Level B driving licence since 2021",
+            "languageCertification": "Level B2 Complex Language Certificate in English"
+        }
+    },
+    "experience": {
+        "head": "Experience",
+        "body": "Take a look at my private projects!"
+    },
+    "footer": {
+        "title": "Contact me!",
+        "footnote": "If for some reason you wouldn't contact me, please let me know why since this is the way I can learn to be a better programmer!",
+        "createdBy": "This page was using Vite React 18 TypeScript and made by me."
+    },
+    "strength": {
+        "title": "My Strengths",
+        "main": "Main Strengths:",
+        "secondary": "Also Know:",
+        "personality": {
+            "title": "Personality:",
+            "body": [
+                "Hard-working",
+                "Charismatic",
+                "Collaborative",
+                "Adaptable"
+            ]
+        },
+        "footnote": "I am always open to learn something new!"
+    },
+    "navbar": {
+        "options": {
+            "aboutMe": "About Me",
+            "education": "Education",
+            "experience": "Experience",
+            "strength": "Strength"
+        }
+    }
+}

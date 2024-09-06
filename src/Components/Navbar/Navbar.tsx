@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const Navbar: React.FC = () => {
+    const [t, i18n] = useTranslation("global");
+
+    const handleChangeLanguage = (lang: string) => {
+        i18n.changeLanguage(lang);
+    };
+
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isMobileView, setIsMobileView] = useState(window.innerWidth < 750);
     const [activeSection, setActiveSection] = useState<string>("");
@@ -49,11 +56,17 @@ const Navbar: React.FC = () => {
     };
     return (
         <nav className="fixed flex w-full justify-between z-20 bg-slate-900">
-            <div className="w-full flex items-center">
+            <div className="w-1/4 flex items-center">
                 <h1 className="tracking-widest text-2xl ml-10">RMB</h1>
             </div>
 
-            <div className="w-full">
+            <div className="flex w-1/4 items-center">
+                <button onClick={() => handleChangeLanguage("en")}>EN</button>
+                <p className="mx-2"> | </p>
+                <button onClick={() => handleChangeLanguage("hu")}>HU</button>
+            </div>
+
+            <div className="w-2/4">
                 {isMobileView ? (
                     <div className="relative">
                         <button
@@ -72,7 +85,7 @@ const Navbar: React.FC = () => {
                                     }`}
                                     onClick={() => handleJump("about")}
                                 >
-                                    About me
+                                    {t("navbar.options.aboutMe")}
                                 </li>
                                 <li
                                     className={`hover:bg-slate-800 w-full text-center py-5 cursor-pointer transition ${
@@ -82,7 +95,7 @@ const Navbar: React.FC = () => {
                                     }`}
                                     onClick={() => handleJump("education")}
                                 >
-                                    Education
+                                    {t("navbar.options.education")}
                                 </li>
                                 <li
                                     className={`hover:bg-slate-800 w-full text-center py-5 cursor-pointer transition ${
@@ -92,7 +105,7 @@ const Navbar: React.FC = () => {
                                     }`}
                                     onClick={() => handleJump("experience")}
                                 >
-                                    Experience
+                                    {t("navbar.options.experience")}
                                 </li>
                                 <li
                                     className={`hover:bg-slate-800 w-full text-center py-5 cursor-pointer transition ${
@@ -102,7 +115,7 @@ const Navbar: React.FC = () => {
                                     }`}
                                     onClick={() => handleJump("strength")}
                                 >
-                                    Strength
+                                    {t("navbar.options.strength")}
                                 </li>
                             </ul>
                         )}
@@ -115,7 +128,7 @@ const Navbar: React.FC = () => {
                             }`}
                             onClick={() => handleJump("about")}
                         >
-                            About me
+                            {t("navbar.options.aboutMe")}
                         </li>
                         <li
                             className={`hover:bg-slate-800 w-1/4 text-center py-5 cursor-pointer transition ${
@@ -125,7 +138,7 @@ const Navbar: React.FC = () => {
                             }`}
                             onClick={() => handleJump("education")}
                         >
-                            Education
+                            {t("navbar.options.education")}
                         </li>
                         <li
                             className={`hover:bg-slate-800 w-1/4 text-center py-5 cursor-pointer transition ${
@@ -135,7 +148,7 @@ const Navbar: React.FC = () => {
                             }`}
                             onClick={() => handleJump("experience")}
                         >
-                            Experience
+                            {t("navbar.options.experience")}
                         </li>
                         <li
                             className={`hover:bg-slate-800 w-1/4 text-center py-5 cursor-pointer transition ${
@@ -145,7 +158,7 @@ const Navbar: React.FC = () => {
                             }`}
                             onClick={() => handleJump("strength")}
                         >
-                            Strength
+                            {t("navbar.options.strength")}
                         </li>
                     </ul>
                 )}

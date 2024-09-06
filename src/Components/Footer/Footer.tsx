@@ -3,8 +3,10 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { MdContactPhone } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 
 const Footer: React.FC = () => {
+    const { t } = useTranslation("global");
     return (
         <footer
             id="footer"
@@ -12,7 +14,7 @@ const Footer: React.FC = () => {
         >
             <div>
                 <h2 className="text-4xl font-medium text-center">
-                    Contact me!
+                    {t("footer.title")}
                 </h2>
                 <div className="flex text-4xl justify-center space-x-4 py-2">
                     <a
@@ -48,13 +50,8 @@ const Footer: React.FC = () => {
                 </span>
                 : +36 30 272 6167
             </p>
-            <p className="mt-20 w-3/4 text-slate-600">
-                If for some reason you wouldn't contact me, please let me know
-                why since this is the way I can learn to be a better programmer!
-            </p>
-            <p className="mt-5 w-3/4 text-slate-600">
-                This page was created with Vite React TypeScript by me.
-            </p>
+            <p className="mt-20 w-3/4 text-slate-600">{t("footer.footnote")}</p>
+            <p className="mt-5 w-3/4 text-slate-600">{t("footer.createdBy")}</p>
         </footer>
     );
 };

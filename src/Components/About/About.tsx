@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const About: React.FC = () => {
+    const { t } = useTranslation("global");
+
     return (
         <section
             id="about"
@@ -15,18 +18,15 @@ const About: React.FC = () => {
                     }}
                 ></div>
                 <h2 className="text-wrap text-4xl text-slate-300 tracking-widest mt-10">
-                    Reményi Mihály Bendegúz
+                    {t("about.name")}
                 </h2>
             </div>
             <div className="max-w-[500px]">
                 <h2 className="text-center text-3xl mb-10 text-slate-300">
-                    Introduction:
+                    {t("about.introduction.head")}
                 </h2>
                 <p className="text-color text-slate-400">
-                    I am a Junior Web Developer and a 3rd-year university
-                    student, who is looking forward to work at your company. I
-                    am an ambitious, goal-oriented, receptive person, who is
-                    willing to work and learn.
+                    {t("about.introduction.body")}
                 </p>
             </div>
         </section>
