@@ -7,16 +7,16 @@ import Footer from "./Components/Footer/Footer";
 import Strength from "./Components/Strength/Strength";
 
 function App() {
-    return (
-        <div className="font-montserrat bg-slate-900 min-h-screen text-slate-200">
-            <Navbar />
-            <About />
-            <Education />
-            <Experience />
-            <Strength />
-            <Footer />
-        </div>
-    );
+  return (
+    <div className="font-montserrat bg-slate-900 min-h-screen text-slate-200">
+      <Navbar />
+      <About />
+      <Education />
+      <Experience />
+      <Strength />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
